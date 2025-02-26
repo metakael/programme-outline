@@ -1,0 +1,39 @@
+programme-outline-generator/
+│
+├── app/                            # Backend Flask application
+│   ├── __init__.py                 # App initialization
+│   ├── models.py                   # Database models
+│   ├── outline_parser.py           # Parser and embedding generator
+│   ├── outline_generator.py        # RAG-based generator
+│   ├── routes.py                   # API routes
+│   ├── static/                     # Static files
+│   └── templates/                  # Flask templates (minimal for API)
+│       └── index.html              # Main template for SPA
+│
+├── config.py                       # Application configuration
+├── requirements.txt                # Python dependencies
+├── run.py                          # Application entry point
+├── uploads/                        # Upload directory for reference outlines
+│
+├── frontend/                       # React frontend
+│   ├── public/                     # Static assets
+│   ├── src/                        # React source code
+│   │   ├── components/             # React components
+│   │   │   ├── Header.js
+│   │   │   ├── Sidebar.js
+│   │   │   ├── SpecificationForm.js
+│   │   │   ├── OutlinePreview.js
+│   │   │   ├── ReferenceLibrary.js
+│   │   │   ├── OutlineList.js
+│   │   │   └── ... (CSS files)
+│   │   ├── App.js                  # Main App component
+│   │   ├── App.css                 # App styles
+│   │   └── index.js                # Entry point
+│   ├── package.json                # NPM dependencies
+│   └── README.md                   # Frontend documentation
+│
+├── Dockerfile                      # Docker configuration
+├── .dockerignore                   # Docker ignore file
+├── .env.example                    # Example environment variables
+├── .gitignore                      # Git ignore file
+└── README.md                       # Project documentation
